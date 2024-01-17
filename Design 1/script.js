@@ -8,7 +8,7 @@ startBtn.addEventListener("click", () => {
     var timer = setInterval(function(){
         document.querySelector('.secs').innerText = ":" + sec;
         sec--;
-        if (sec < "00") {
+        if (sec < 0) {
             clearInterval(timer);
         }
 
