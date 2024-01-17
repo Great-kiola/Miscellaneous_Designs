@@ -17,9 +17,8 @@ body{
 
 .container{
     border: 2.5px solid var(--borderColor);
-    width: 450px;
-    /* max-height: 100px; */
-    padding: 20px;
+    width: 530px;
+    padding: 35px;
     border-radius: 20px;
 }
 
@@ -52,8 +51,14 @@ body{
     border-radius: 20px;
 }
 
+.countDown p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--textSubtleColor);
+}
+
 .timeContent{
-    padding: 30px;
+    padding: 5px 10px 20px;
 }
 
 .countDown{
@@ -78,6 +83,8 @@ body{
     align-items: center;
     border-radius: 20px 20px 0px 0px ;
     background-color: var(--subtleColor);
+    padding: 10px 0;
+    border-bottom: var(--border);
 }
 
 .startCount{
@@ -86,6 +93,58 @@ body{
     align-items: center;
     gap: 10px;
     color: var(--purple);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.startCount:hover{
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 20px;
+
+}
+
+/* Footer */
+.footerContent{
+    margin-top: 25px;
+}
+
+.footerContent h1{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--textSubtleColor);
+}
+
+.brands{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loom{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.name h1{
+    font-size: 1.4rem;
+    text-transform: none;
+    color: var(--black);
+}
+
+.brandDetails{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.loom img{
+    border-radius: 50px;
 }
 
 :root{
@@ -93,6 +152,8 @@ body{
     --subtleColor: #f7f8fa;
     --textSubtleColor: #868c98;
     --purple: #6f40eeff;
+    --white: #fff;
+    --black: #000;
 
     --border: 2.5px solid var(--borderColor);
 }
