@@ -80,6 +80,7 @@ body{
     color: var(--textSubtleColor);
 }
 
+
 .title{
     display: flex;
     align-items: center;

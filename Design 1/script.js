@@ -6,19 +6,23 @@ let stopDiv = document.querySelector(".stopDiv");
 var timer;
 
 startBtn.addEventListener("click", () => {
-    var sec = 30;
+    var sec = 18;
     stopDiv.style.display = "block";
 
     timer = setInterval(function(){
-        document.querySelector('.secs').innerText = ":" + sec;
+        let secs = document.querySelector('.secs');
+
+        secs.innerText = ":" + sec;
         sec--;
 
         if (sec <= 0) {
             clearInterval(timer);
+            stopDiv.style.display = "none";
         }
         
         if (sec <= 9 ){
             document.querySelector('.secs').innerText = ":0" + sec;
+            secs.style.color("#e63946")
         }
 
     }, 1000);
