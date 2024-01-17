@@ -39,6 +39,10 @@ body{
     font-weight: 600;
 }
 
+.time h1{
+    font-weight: 800;
+}
+
 .history{
     border: var(--border);
     padding: 5px 15px ;
