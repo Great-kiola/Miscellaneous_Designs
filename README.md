@@ -5,4 +5,4 @@ This repository would contain beautiful and useful design from various creators 
 
 <!-- <img width="1347" alt="image" src="https://pbs.twimg.com/media/GD5Z3wZWkAIpaTK?format=jpg&name=4096x4096"> -->
 
-<img src="https://pbs.twimg.com/media/GD5Z3wZWkAIpaTK?format=jpg&name=3500x4096" alt="Completed image Screenshot">
+<img src="https://pbs.twimg.com/media/GD5Z3wZWkAIpaTK?format=jpg&name=4096x4096" alt="Completed image Screenshot">
