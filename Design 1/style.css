@@ -17,25 +17,82 @@ body{
 
 .container{
     border: 2.5px solid var(--borderColor);
-    width: 400px;
-    height: 100px;
+    width: 450px;
+    /* max-height: 100px; */
     padding: 20px;
     border-radius: 20px;
 }
 
-.time{
+.heading{
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
 }
 
-.time h1{
-    font-size: 1.6rem;
+.time, .history{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.time h1, .history h1, .timerDiv h1{
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
+.history{
+    border: var(--border);
+    padding: 12px 15px ;
+    border-radius: 20px;
+}
+
+.timerDiv{
+    margin-top: 35px;
+    border: var(--border);
+    border-radius: 20px;
+}
+
+.timeContent{
+    padding: 30px;
+}
+
+.countDown{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.countDown .count h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.secs{
+    color: var(--textSubtleColor);
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px ;
+    background-color: var(--subtleColor);
+}
+
+.startCount{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--purple);
+}
 
 :root{
     --borderColor: #e5e4e7ff;
     --subtleColor: #f7f8fa;
+    --textSubtleColor: #868c98;
+    --purple: #6f40eeff;
+
+    --border: 2.5px solid var(--borderColor);
 }
