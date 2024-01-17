@@ -28,6 +28,7 @@ startBtn.addEventListener("click", () => {
 stopDiv.addEventListener("click" , () => {
     clearInterval(timer);
     document.querySelector('.secs').innerText = ":00";
+    stopDiv.style.display = "none";
 });
 
 vertical.forEach((moreVertical) => {
