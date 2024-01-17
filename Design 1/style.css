@@ -101,6 +101,18 @@ body{
     transition: all 0.5s ease;
 }
 
+.counter{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+}
+
+.stopDiv{
+    cursor: pointer;
+    display: none;
+}
+
 .startCount:hover{
     background-color: var(--purple);
     color: var(--white);
