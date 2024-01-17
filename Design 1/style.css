@@ -45,6 +45,7 @@ body{
     border-radius: 20px;
 }
 
+/* Timer */
 .timerDiv{
     margin-top: 35px;
     border: var(--border);
@@ -95,7 +96,7 @@ body{
     gap: 10px;
     color: var(--purple);
     cursor: pointer;
-    padding: 20px;
+    padding: 10px 15px;
     border-radius: 20px;
     transition: all 0.5s ease;
 }
@@ -103,13 +104,13 @@ body{
 .startCount:hover{
     background-color: var(--purple);
     color: var(--white);
-    padding: 20px;
-
+    padding: 10px 15px;
 }
 
 /* Footer */
 .footerContent{
     margin-top: 25px;
+    position: relative;
 }
 
 .footerContent h1{
@@ -147,6 +148,57 @@ body{
 .loom img{
     border-radius: 50px;
 }
+
+.moreModal{
+    padding: 15px;
+    width: 200px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: var(--white);
+    top: -10px;
+    right: 35px;
+    display: none;
+}
+
+.moreModal h1{
+    font-size: 1rem;
+    text-transform: none;
+}
+
+.edit, .delete{
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.edit:hover h1{
+    color: var(--black);
+}
+
+.delete:hover h1{
+    color: var(--white);
+}
+
+.edit:hover{
+    background-color: var(--subtleColor);
+}
+
+.delete:hover{
+    color: var(--white);
+    background-color: #e63946;
+}
+
+.vertical{
+    cursor: pointer;
+}
+
+.vertical:hover .moreModal{
+    display: block;
+}
+
 
 :root{
     --borderColor: #e5e4e7ff;
