@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,10 +9,104 @@
 body{
     line-height: 1.5;
     min-height: 100vh;
+    background-color: var(--bgColor);
+    font-family: 'Urbanist', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.card{
+    border-radius: 20px;
+    padding: 35px;
+    width: 500px;
+    background-color: var(--cardColor);
+}
+
+.card .title{
+    font-size: 1.8rem;
+}
+
+.imgDiv{
+    margin-bottom: 20px;
+}
+
+.taskDates{
+    margin: 8px auto;
+}
+
+.dates, .start, .end{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.start h1, .end h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.start, .end{
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.progressBg{
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: var(--progress);
+    margin: 15px auto;
+}
+
+.progress{
+    width: 20%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: green;
+}
+
+.textDiv h2{
+    font-size: 1.2rem;
+}
+
+.lastUpdate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lastUpdated{
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.profileDiv{
+    display: flex;
+    align-items: center;
+}
+
+.profileDiv img{
+    width: 50px;
+    border-radius: 50px;
+    border: 5px solid var(--cardColor);
+    margin-right: -12px;
+}
+
+.profileDiv .more{
+    background-color: var(--progress);
+    width: 50px;
+    height: 50px;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: 50px;
+    border: 5px solid var(--cardColor);
+}
 
 :root{
-    --bgColor: ##eff1f2ff;
+    --bgColor: #eff1f2ff;
     --cardColor: #ffffff;
+    --contColor: #faf9fb;
+    --progress: #ececed;
+    --textColor: #bababa;
 }
