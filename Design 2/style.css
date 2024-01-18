@@ -16,6 +16,18 @@ body{
     justify-content: center;
 }
 
+.container{
+
+    background-color: var(--contColor);
+    padding: 200px;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
 .card{
     border-radius: 20px;
     padding: 35px;
@@ -29,6 +41,10 @@ body{
 
 .imgDiv{
     margin-bottom: 20px;
+}
+
+.imgDiv img{
+    width: 45px;
 }
 
 .taskDates{
@@ -63,7 +79,7 @@ body{
     width: 20%;
     height: 10px;
     border-radius: 20px;
-    background-color: green;
+    background-color: var(--green);
 }
 
 .textDiv h2{
@@ -74,6 +90,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 20px auto;
 }
 
 .lastUpdated{
@@ -103,10 +120,28 @@ body{
     border: 5px solid var(--cardColor);
 }
 
+
+.completed{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--green);
+    background-color: var(--lightGreen);
+    width: 150px;
+    padding: 8px 17px;
+    border-radius: 40px;
+}
+
+.completed h1{
+    font-size: 1.1rem;
+}
+
 :root{
     --bgColor: #eff1f2ff;
     --cardColor: #ffffff;
     --contColor: #faf9fb;
     --progress: #ececed;
     --textColor: #bababa;
+    --green: #019939ff;
+    --lightGreen: #c1f4d4;
 }
