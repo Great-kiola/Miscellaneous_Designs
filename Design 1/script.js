@@ -2,11 +2,16 @@ let startBtn = document.querySelector("#startBtn");
 let vertical = document.querySelectorAll(".vertical");
 let modal = document.querySelector(".moreModal");
 let stopDiv = document.querySelector(".stopDiv");
-
+let awaiting = document.querySelector(".awaiting");
 var timer;
 
+
+// Confetti
+const jsConfetti = new JSConfetti();
+
 startBtn.addEventListener("click", () => {
-    var sec = 18;
+    awaiting.innerHTML = "AWAITING";
+    var sec = 10;
     stopDiv.style.display = "block";
 
     timer = setInterval(function(){
@@ -18,11 +23,18 @@ startBtn.addEventListener("click", () => {
         if (sec <= 0) {
             clearInterval(timer);
             stopDiv.style.display = "none";
+
+            awaiting.innerHTML = "COMPLETED";
+
+            jsConfetti.addConfetti({
+                emojis: ['🎊', '🍀', '🎈'],
+                emojiSize: 50,
+                confettiNumber: 250,
+            })
         }
         
         if (sec <= 9 ){
             document.querySelector('.secs').innerText = ":0" + sec;
-            secs.style.color("#e63946")
         }
 
     }, 1000);
@@ -33,6 +45,7 @@ stopDiv.addEventListener("click" , () => {
     clearInterval(timer);
     document.querySelector('.secs').innerText = ":00";
     stopDiv.style.display = "none";
+    awaiting.innerHTML = "STOPPED";
 });
 
 vertical.forEach((moreVertical) => {
@@ -45,8 +58,6 @@ vertical.forEach((moreVertical) => {
     }
   });
 });
-
-
 
 
 
