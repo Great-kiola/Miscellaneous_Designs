@@ -14,22 +14,53 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
         </div>
 
-        <div class="details">
-            <div class="firstDiv">
-                <div class="text">
-                    <h2>From</h2>
-                    <h2>Balance: <span>10,000</span>ADA</h2>
+        <div class="coinConvertion">
+            <div class="details">
+                <div class="firstDiv">
+                    <div class="text">
+                        <h2>From</h2>
+                        <h2>Balance: <span>10,000</span> ADA</h2>
+                    </div>
+    
+                    <div class="input">
+                        <input type="number" placeholder="0.00">
+                        <div class="coin">
+                            <img src="https://static-00.iconduck.com/assets.00/cardano-cryptocurrency-icon-512x512-x99hiphg.png" alt="ADA Logo" width="30px">
+                            <p>ADA</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="input">
-                    <input type="text" placeholder="0.00">
-                    <div class="coin">
-                        <img src="https://static-00.iconduck.com/assets.00/cardano-cryptocurrency-icon-512x512-x99hiphg.png" alt="ADA Logo" width="30px">
-                        <p>ADA</p>
+            </div>
+    
+            <div class="convert">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-switch-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 8l4 -4l4 4" /><path d="M7 4l0 9" /><path d="M13 16l4 4l4 -4" /><path d="M17 10l0 10" /></svg>
+            </div>
+    
+            <div class="details sendTo">
+                <div class="firstDiv">
+                    <div class="text">
+                        <h2>To</h2>
+                        <h2>Balance: <span>0</span> KCS</h2>
+                    </div>
+    
+                    <div class="input">
+                        <input type="number" placeholder="0.00">
+                        <div class="coin">
+                            <img src="https://cryptologos.cc/logos/kucoin-token-kcs-logo.png?v=029" alt="KUCOIN Logo" width="30px">
+                            <p>KUCOIN</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <div class="slippagetol">
+            <h2>Slippage tolerance</h2>
+        </div>
+
+        <button class="btn">Provide Liquidity</button>
+
     </div>
     
     <script src="script.js"></script>

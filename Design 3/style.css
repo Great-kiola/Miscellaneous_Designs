@@ -36,8 +36,14 @@ body{
 
 .details{
     background-color: var(--inputColor);
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.details.sendTo{
+    margin-top: -5px;
 }
 
 .text{
@@ -55,7 +61,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px auto;
+    margin: 5px auto;
 }
 
 .coin{
@@ -66,6 +72,68 @@ body{
     padding: 8px 15px;
     border-radius: 30px;
     border: 1px solid var(--borderColor);
+    cursor: pointer;
+}
+
+.coin:hover{
+    background-color: var(--borderColor);
+    color: var(--textColor);
+}
+
+.coin p{
+    font-weight: 600;
+}
+
+input{
+    font-size: 1.5rem;
+    padding: 15px 10px;
+    color: var(--textColor);
+    width: 250px;
+    background-color: transparent;
+    font-weight: 700;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.coinConvertion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.convert{
+    background-color: var(--contColor);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+}
+
+.slippagetol h2{
+    font-size: .9rem;
+}
+
+.btn{
+    width: 100%;
+    margin: 12px auto;
+    padding: 18px;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: var(--buttonColor);
+    border-radius: 50px;
+    color: var(--contColor);
 }
 
 :root{
@@ -74,4 +142,5 @@ body{
     --inputColor: #f7fafc;
     --buttonColor: #10172a;
     --borderColor: #d7dfe8;
+    --textColor: #607189;
 }
