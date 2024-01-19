@@ -1,10 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
     line-height: 1.5;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgcolor);
+}
+
+.container{
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    background-color: var(--contColor);
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.heading h1{
+    font-size: 1.3rem;
+}
+
+.details{
+    background-color: var(--inputColor);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text h2{
+    font-size: .8rem;
+    color: var(--bgcolor);
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+.coin{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--contColor);
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 1px solid var(--borderColor);
+}
+
+:root{
+    --bgcolor: #a0aec0;
+    --contColor: #ffffff;
+    --inputColor: #f7fafc;
+    --buttonColor: #10172a;
+    --borderColor: #d7dfe8;
 }
