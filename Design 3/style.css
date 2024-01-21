@@ -75,8 +75,6 @@ body{
     border-radius: 30px;
     border: 1px solid var(--borderColor);
     cursor: pointer;
-    transition: all 0.5s ease;
-
 }
 
 .coin:hover{
@@ -101,7 +99,7 @@ body{
 
 .active{
     opacity: 100;
-    /* visibility: visible; */
+    transition: all 0.5s ease;
 }
 
 .coin-modal ul li{
