@@ -105,7 +105,6 @@ body{
     display: flex;
     align-items: center;
     padding: 10px;
-    margin-bottom: 5px;
     gap: 5px;
     cursor: pointer;
 }
